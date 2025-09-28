@@ -116,8 +116,8 @@ Artinya:
 # 🧑‍💻 Implementasi Kode (Javascirpt)
 
 ```javascript
-	function binarySearch(data, target) {
-    let low = 0;
+function binarySearch(data, target) {
+	let low = 0;
     let high = data.length - 1;
 
     while (low <= high) {
