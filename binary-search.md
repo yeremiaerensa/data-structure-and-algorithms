@@ -117,7 +117,7 @@ Artinya:
 
 ```javascript
 function binarySearch(data, target) {
-	let low = 0;
+    let low = 0;
     let high = data.length - 1;
 
     while (low <= high) {
