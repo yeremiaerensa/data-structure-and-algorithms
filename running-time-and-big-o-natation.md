@@ -455,7 +455,3 @@ LinearSearch: 10.5 ms
 - Gunakan **Big O Notation** untuk menganalisis performa algoritma
 - Pilih algoritma efisien sesuai skala data
 - Untuk data besar, hindari algoritma O(n²) atau O(2ⁿ)
-
-------
-
-Kalau kamu mau, aku bisa bantu:
