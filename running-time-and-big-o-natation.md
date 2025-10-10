@@ -2,7 +2,7 @@
 
 > waktu yang dibutuhkan oleh suatu algoritma untuk menyelesaikan tugasnya.
 
-➡️ Contoh:
+Contoh:
  Sebuah fungsi yang mengecek apakah angka 5 ada dalam array `[1, 2, 3, 4, 5]` mungkin butuh 5 langkah pengecekan (1 langkah per elemen).
 
 Tapi karena waktu berjalan bisa berbeda di setiap komputer, kita gunakan **model matematis** untuk mengukurnya → yaitu: **Big O Notation**

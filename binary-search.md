@@ -64,7 +64,7 @@ Langkah-langkah:
 
 1. Cek elemen tengah → `20` → bukan
 2. Ambil setengah yang lebih besar → `30` → bukan
-3. Ambil setengah yang lebih kecil → `22` → cocok ✅
+3. Ambil setengah yang lebih kecil → `22` → cocok 
 
 Itu **3 langkah saja**, bukan 8 seperti di pencarian linear.Binary search jauh lebih cepat dibandingkan pencarian linear O(n) untuk data besar.
 
@@ -105,8 +105,8 @@ Artinya:
 
 - Karena kamu **nggak bisa ambil 0.32 langkah**, maka:
 
-  - ⏱ Untuk hitung waktu/kompleksitas maksimal → ambil `ceil(4.32) = 5`
-  - 📍 Untuk akses indeks array → pakai `floor` atau pembulatan ke bawah
+  - Untuk hitung waktu/kompleksitas maksimal → ambil `ceil(4.32) = 5`
+  - Untuk akses indeks array → pakai `floor` atau pembulatan ke bawah
 
 ------
 
@@ -152,8 +152,8 @@ console.log("Hasil pencarian:", result);  // Output: 4
 - `low = 0`, `high = 7`
 - `mid = Math.floor((0 + 7) / 2) = 3`
 - `data[3] = 20`
-- ➡️ 20 < 22 → pindah ke kanan
-- 🔁 `low = 4`, `high = 7`
+- 20 < 22 → pindah ke kanan
+- `low = 4`, `high = 7`
 
 ------
 
@@ -161,15 +161,15 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 - `mid = Math.floor((4 + 7) / 2) = 5`
 - `data[5] = 30`
-- ➡️ 30 > 22 → pindah ke kiri
-- 🔁 `low = 4`, `high = 4`
+- ➡30 > 22 → pindah ke kiri
+- `low = 4`, `high = 4`
 
 ------
 
 ### **Langkah 3**
 
 - `mid = Math.floor((4 + 4) / 2) = 4`
-- `data[4] = 22` → ✅ cocok!
+- `data[4] = 22` → cocok!
 
 ------
 
@@ -185,7 +185,7 @@ console.log("Hasil pencarian:", result);  // Output: 4
 | ------- | ---- | ---- | ---- | --------- | -------------- |
 | 1       | 0    | 7    | 3    | 20        | Geser ke kanan |
 | 2       | 4    | 7    | 5    | 30        | Geser ke kiri  |
-| 3       | 4    | 4    | 4    | 22        | ✅ Ditemukan    |
+| 3       | 4    | 4    | 4    | 22        | Ditemukan      |
 
 ------
 
