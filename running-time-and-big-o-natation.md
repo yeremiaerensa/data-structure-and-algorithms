@@ -1,4 +1,4 @@
-# 🧠 **Running Time**
+# **Running Time**
 
 > waktu yang dibutuhkan oleh suatu algoritma untuk menyelesaikan tugasnya.
 
@@ -9,13 +9,13 @@ Tapi karena waktu berjalan bisa berbeda di setiap komputer, kita gunakan **model
 
 ------
 
-# 📐 Big O Notation
+# Big O Notation
 
-> cara untuk menggambarkan bagaimana **running time** suatu algoritma **berkembang seiring bertambahnya ukuran input (`n`)**.
+> cara untuk menggambarkan bagaimana **running time** suatu algoritma **berkembang seiring bertambahnya ukuran input  atau banyaknya data (`n`)**.
 
 ------
 
-## 📊 Notasi Big O Umum
+## Notasi Big O Umum
 
 | Notasi     | Nama         | Contoh Algoritma                | Waktu Perkiraan (n = 1.000.000) |
 | ---------- | ------------ | ------------------------------- | ------------------------------- |
@@ -28,9 +28,9 @@ Tapi karena waktu berjalan bisa berbeda di setiap komputer, kita gunakan **model
 
 ------
 
-## 🔁 Contoh Implementasi dalam **JavaScript**
+## Implementasi dalam **JavaScript**
 
-### 📌 O(1) – Konstan
+### O(1) – Konstan
 
 ```javascript
 function getFirstElement(arr) {
@@ -47,7 +47,7 @@ console.log("O(1):", data[2]);  // Output: 30
 
 ------
 
-### 📌 O(n) – Linear
+### O(n) – Linear
 
 ```javascript
 function linearSearch(arr, target) {
@@ -67,7 +67,7 @@ console.log("O(n):", linearSearch(nums, 8));  // Output: 3
 
 ------
 
-### 📌 O(log n) – Logaritmik (Binary Search)
+### O(log n) – Logaritmik (Binary Search)
 
 ```javascript
 function binarySearch(arr, target) {
@@ -100,7 +100,7 @@ console.log("O(log n):", binarySearch(sorted, 11));  // Output: 5
 
 ------
 
-### 📌 O(n²) – Kuadratik
+### O(n²) – Kuadratik
 
 ```javascript
 function hasDuplicateBruteForce(arr) {
@@ -123,7 +123,7 @@ console.log("O(n²):", hasDuplicates(test));  // Output: true
 
 ------
 
-### 📌 O(n log n) – Linear-Logarithmic Time
+### O(n log n) – Linear-Logarithmic Time
 
 > Menggunakan `Array.prototype.sort()` (dalam V8 menggunakan TimSort)
 
@@ -140,7 +140,7 @@ console.log("O(n log n):", sortedArr);  // Output: [1, 8, 12, 23, 35, 42]
 
 ---
 
-### 📌 O(2ⁿ) – Eksponensial Time
+### O(2ⁿ) – Eksponensial Time
 
 > Hitung semua subset dari array (rekursif)
 
@@ -400,7 +400,7 @@ console.log("O(2ⁿ):", subsets);
 
 ---
 
-# 🔍 Simulasi Waktu (Javascript)
+# Simulasi Waktu (Javascript)
 
 Misalnya kamu ingin tahu berapa waktu real untuk O(n):
 
@@ -428,7 +428,7 @@ LinearSearch: 10.5 ms
 >
 > ### Contoh Penggunaan:
 >
-> ```
+> ```javascript
 > console.time('loop');
 > 
 > for (let i = 0; i < 1000000; i++) {
@@ -442,7 +442,7 @@ LinearSearch: 10.5 ms
 >
 > Misalnya:
 >
-> ```
+> ```javascript
 > loop: 12.345ms
 > ```
 >
@@ -450,7 +450,7 @@ LinearSearch: 10.5 ms
 
 ------
 
-# 🧠 Kesimpulan
+# Kesimpulan
 
 - Gunakan **Big O Notation** untuk menganalisis performa algoritma
 - Pilih algoritma efisien sesuai skala data

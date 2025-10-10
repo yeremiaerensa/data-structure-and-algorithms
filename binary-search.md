@@ -1,19 +1,18 @@
-# 🔍 Apa Itu Binary Search?
+# Binary Search
 
-**Binary Search (Pencarian Biner)** adalah sebuah **algoritma pencarian** yang digunakan untuk mencari sebuah elemen pada **daftar (array atau list) yang sudah terurut**.
+> sebuah **algoritma pencarian** yang digunakan untuk mencari sebuah elemen pada **daftar (array atau list) yang sudah terurut**.
 
 Binary search bekerja dengan cara **membagi dua** daftar pencarian, lalu membandingkan elemen tengah dengan target. Jika belum ditemukan, algoritma akan memilih **setengah daftar** yang mungkin berisi target dan membuang sisanya. Proses ini diulang hingga ditemukan atau tidak ada elemen yang tersisa.
 
+> [!NOTE]
+>
+> - Data **harus terurut** (ascending atau descending).
+> - Harus bisa mengakses elemen berdasarkan indeks (misalnya list/array, bukan linked list).
+>
+
 ------
 
-# ⚙️ Syarat Binary Search
-
-- Data **harus terurut** (ascending atau descending).
-- Harus bisa mengakses elemen berdasarkan indeks (misalnya list/array, bukan linked list).
-
-------
-
-# 🧠 Cara Kerja Binary Search
+# Cara Kerja Binary Search
 
 1. Tentukan **awal** dan **akhir** dari list (misalnya indeks `low` dan `high`).
 2. Ambil elemen di **tengah**: `mid = (low + high) // 2`
@@ -25,11 +24,11 @@ Binary search bekerja dengan cara **membagi dua** daftar pencarian, lalu memband
 
 ------
 
-# 🔢 Contoh Ilustrasi
+# Ilustrasi
 
 Misal kamu punya daftar angka:
 
-```
+```javascript
 [1, 3, 5, 7, 9, 11, 13, 15]
 ```
 
@@ -42,7 +41,7 @@ Dan kamu ingin mencari angka `11`.
 
 ------
 
-# ⌛ Kompleksitas Waktu
+# Kompleksitas Waktu
 
 - **Best Case:** O(1) → Langsung ketemu
 - **Average Case:** O(log n)
@@ -54,7 +53,7 @@ Dan kamu ingin mencari angka `11`.
 | Average Case | O(log n) | Rata-rata pencarian memotong separuh data tiap langkah |
 | Worst Case   | O(log n) | Pencarian terus dilakukan sampai sisa 1 data           |
 
-## 📊 **Ilustrasi Sederhana**
+## **Ilustrasi Sederhana**
 
 Misalnya kita cari angka **22** dalam array `[3, 7, 15, 20, 22, 30, 42, 55]`:
 
@@ -69,15 +68,13 @@ Langkah-langkah:
 
 Itu **3 langkah saja**, bukan 8 seperti di pencarian linear.Binary search jauh lebih cepat dibandingkan pencarian linear O(n) untuk data besar.
 
-## 🧠 Interpretasi 
+## Interpretasi 
 
-**log₂(20) ≈ 4.32**
-
-> Kamu perlu membagi `20` secara **berulang kali menjadi setengah**, sebanyak **sekitar 4.32 kali**, sampai tersisa 1.
+> **log₂(20) ≈ 4.32** → membagi `20` secara **berulang kali menjadi setengah**, sebanyak **sekitar 4.32 kali**, sampai tersisa 1.
 
 ------
 
-### ✂️ Simulasi Pembagian Setengah
+### Simulasi Pembagian Setengah
 
 Misalnya kamu tidak pakai log langsung, tapi **bagi 20 jadi setengah terus**:
 
@@ -98,7 +95,7 @@ Artinya:
 
 ------
 
-### 📌 Kesimpulan
+### Kesimpulan
 
 - `log₂(20) ≈ 4.32` artinya **2^4.32 ≈ 20**
 
@@ -113,7 +110,7 @@ Artinya:
 
 ------
 
-# 🧑‍💻 Implementasi Kode (Javascirpt)
+# Implementasi Kode (Javascirpt)
 
 ```javascript
 function binarySearch(data, target) {
@@ -150,7 +147,7 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 ------
 
-### 📦 **Langkah 1**
+### **Langkah 1**
 
 - `low = 0`, `high = 7`
 - `mid = Math.floor((0 + 7) / 2) = 3`
@@ -160,7 +157,7 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 ------
 
-### 📦 **Langkah 2**
+### **Langkah 2**
 
 - `mid = Math.floor((4 + 7) / 2) = 5`
 - `data[5] = 30`
@@ -169,20 +166,20 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 ------
 
-### 📦 **Langkah 3**
+### **Langkah 3**
 
 - `mid = Math.floor((4 + 4) / 2) = 4`
 - `data[4] = 22` → ✅ cocok!
 
 ------
 
-## ✅ **Hasil akhir:**
+## **Hasil akhir:**
 
 - Nilai `22` ditemukan di indeks `4`
 
 ------
 
-## 🔍 Ilustrasi Visual
+## Ilustrasi Visual
 
 | Langkah | low  | high | mid  | data[mid] | Aksi           |
 | ------- | ---- | ---- | ---- | --------- | -------------- |
@@ -192,7 +189,7 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 ------
 
-# 🌍 Contoh Implementasi Binary Search di Dunia Nyata
+# Contoh Implementasi Binary Search
 
 ## 1. **Mencari Nama dalam Buku Telepon**
 
@@ -216,22 +213,22 @@ Dalam permainan "tebak angka dari 1–100", jika kamu langsung tebak 50, lalu 75
 
 ------
 
-# 📌 Kelebihan & Kekurangan Binary Search
+# Kelebihan & Kekurangan Binary Search
 
-## ✅ Kelebihan:
+## Kelebihan:
 
 - Sangat cepat untuk data besar yang terurut
 - Sederhana dan efisien
 - Mudah diimplementasikan
 
-## ❌ Kekurangan:
+## Kekurangan:
 
 - Hanya bisa digunakan pada data **yang sudah terurut**
 - Tidak efisien jika data tidak bisa diakses secara langsung (seperti linked list)
 
 ------
 
-# 📚 Kesimpulan
+# Kesimpulan
 
 - Binary search adalah algoritma pencarian cepat dengan logika "bagi dua".
 - Wajib digunakan jika kamu sering bekerja dengan data yang besar dan **sudah terurut**.
