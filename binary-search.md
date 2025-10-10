@@ -191,7 +191,7 @@ console.log("Hasil pencarian:", result);  // Output: 4
 
 # Contoh Implementasi Binary Search
 
-## 1. **Mencari Nama dalam Buku Telepon**
+## 1. **Mencari Nama dalam Buku telepon**
 
 Buku telepon diurutkan berdasarkan abjad. Kalau kamu mencari "Rudi", kamu tidak perlu membaca dari awal, cukup buka bagian tengah dan sesuaikan: lebih awal atau lebih akhir? Itu adalah **binary search manual**.
 
